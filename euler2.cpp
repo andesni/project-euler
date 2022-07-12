@@ -5,25 +5,25 @@ using namespace std;
 int main()
 {
 	int num1=0, num2=1;
-	int fbseq;
+	int fibonacciSequence;
 	
 	cout<<"The sum of even valued terms in the Fibonacci sequence whose values do not exceed four million is ";
-	fbseq = num1 + num2;
+	fibonacciSequence = num1 + num2;
 	
-	while(fbseq <= 4000000)
+	while(fibonacciSequence <= 4000000)
 	{
 		num1 = num2;
-		num2 = fbseq;
-		fbseq = num1 + num2;
+		num2 = fibonacciSequence;
+		fibonacciSequence = num1 + num2;
 		
-		if(fbseq%2 == 0)
+		if(fibonacciSequence%2 == 0)
 		{
 			int sum = 0;
-			fbseq += sum;
+			fibonacciSequence += sum;
 		}
 	}
 	
-	cout<<fbseq<<". ";
+	cout<<fibonacciSequence<<". ";
 
 	
 	return 0;
